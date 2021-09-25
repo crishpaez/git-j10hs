@@ -9,3 +9,71 @@
 body, h1, h2, h3, header p{
     margin: 0px;
 }
+
+/*Barra de Navegacion*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #c3a, #66c);
+}
+
+nav a{
+    display: block;
+    padding: .5rem;
+    color: #eee;
+    text-decoration: none;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn{
+    margin: .5rem;
+    color: #eee;
+    border: .1rem solid #eee;
+    background-color: transparent;
+    font-size: 1.2rem;
+}
+
+.btn:hover{
+    color: #66c;
+    background-color: #eee;
+}
+
+.menu{
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    list-style: none;
+    overflow: hidden;
+}
+.menu .active{
+    max-height: 600px;
+}
+
+.menu a:hover{
+    background-color: #3338;
+}
+
+/*Medium Devices - Tablets*/
+@media screen and (min-width:768px){
+    nav .btn{
+        display: none;
+    }
+    .menu{
+        width: auto;
+        display: flex;
+        max-height: 600px;
+    }
+}
+
+/*Extra Large Devices - Desktop*/
+@media screen and (min-width:1200px){
+    nav{
+        justify-content: space-around;
+    }
+}
