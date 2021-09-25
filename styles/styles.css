@@ -48,6 +48,11 @@ nav a{
     width: 100%;
     padding: 0;
     list-style: none;
+    list-style: none;
+    overflow: hidden;
+}
+.menu .active{
+    max-height: 600px;
 }
 
 .menu a:hover{
